@@ -1,0 +1,27 @@
+
+
+Task Manager Application – MVC Responsibilities 
+
+Models The models are the data part of the system. They store the actual
+task information and handle how the data is saved and loaded. In my task
+manager app, the model classes represent things like Users, Tasks,
+Comments, and Notifications. Models also do small logic connected to the
+data, such as updating a task or adding a comment. They do not deal with
+user input or screens. They only care about storing and keeping data
+correct.
+
+Views The views are what the user sees. They don’t make decisions. Their
+job is to show information and take input from the user. A view might
+show the list of tasks, a form for adding a task, or a message telling
+the user something went wrong. Views should only display things and pass
+input to the controller.
+
+Controllers Controllers are the middle part between views and models.
+They take input from the view, check it, decide what to do, and call the
+model to save or update data. Then they tell the view what to show next.
+They contain most of the logic such as validation, permissions, and
+deciding which model functions to use.
+
+Summary In short: models store data, controllers make decisions, and
+views show things to the user. Keeping them separate makes the app
+easier to understand and maintain.
